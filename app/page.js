@@ -206,7 +206,7 @@ export default function Home() {
           </h1>
 
           <p className="reveal delay-300" style={{
-            fontSize: 'clamp(1.05rem, 2.8vw, 1.25rem)',
+            fontSize: 'clamp(1.4rem, 3.5vw, 2rem)',
             color: 'var(--text-muted)', lineHeight: 1.7,
             maxWidth: 520, margin: '0 auto 48px',
           }}>
