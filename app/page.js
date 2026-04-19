@@ -232,12 +232,6 @@ export default function Home() {
             </span>
           </div>
         </div>
-
-        <div style={{ position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)',
-          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: 0.4 }}>
-          <span style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase' }}>scroll</span>
-          <div style={{ width: 1, height: 40, background: 'linear-gradient(to bottom, rgba(232,84,122,0.8), transparent)' }}/>
-        </div>
       </section>
 
       {/* MARQUEE */}
