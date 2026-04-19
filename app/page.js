@@ -186,7 +186,7 @@ export default function Home() {
           </div>
 
           <div className="reveal delay-100 font-display text-glow" style={{
-            fontSize: 'clamp(4rem, 15vw, 10rem)',
+            fontSize: 'clamp(6rem, 22vw, 16rem)',
             fontWeight: 300, lineHeight: 0.9, letterSpacing: '-2px',
             background: 'linear-gradient(135deg, #f0ecea 20%, #f8c8d4 50%, #e8547a 80%)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
