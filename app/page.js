@@ -227,7 +227,7 @@ export default function Home() {
             >
               Únete a la lista de espera
             </button>
-            <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>
+            <span style={{ fontSize: 16, color: 'var(--text-muted)' }}>
               Más de 1200 personas esperando
             </span>
           </div>
