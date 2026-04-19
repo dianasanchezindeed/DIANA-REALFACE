@@ -196,7 +196,7 @@ export default function Home() {
           </div>
 
           <h1 className="reveal delay-200 font-display" style={{
-            fontSize: 'clamp(1.6rem, 4vw, 2.8rem)',
+            fontSize: 'clamp(2.2rem, 6vw, 4.2rem)',
             fontWeight: 300, lineHeight: 1.2,
             color: '#ffffff',
             marginBottom: 16, fontStyle: 'italic',
