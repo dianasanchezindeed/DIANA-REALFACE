@@ -275,7 +275,7 @@ export default function Home() {
                 <div style={{ width: 56, height: 56, borderRadius: '50%', background: item.color,
                   border: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center',
                   justifyContent: 'center', fontSize: 24, margin: '0 auto 20px', color: 'rgba(240,236,234,0.5)' }}>{item.icon}</div>
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 400, marginBottom: 10, color: 'rgba(240,236,234,0.5)',
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: 10, color: 'rgba(240,236,234,0.5)',
                   textDecoration: 'line-through', textDecorationColor: 'rgba(232,84,122,0.4)' }}>{item.title}</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
