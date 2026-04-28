@@ -308,7 +308,7 @@ export default function Home() {
                 style={{ padding: '36px 28px', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                 <div className="gradient-text" style={{ fontSize: 28, marginBottom: 16 }}>{item.icon}</div>
                 <h3 style={{ fontSize: '1.35rem', fontWeight: 500, marginBottom: 10 }}>{item.label}</h3>
-                <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.sub}</p>
+                <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.sub}</p>
               </div>
             ))}
           </div>
