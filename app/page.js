@@ -258,8 +258,8 @@ export default function Home() {
         <div className="orb" style={{ width: 500, height: 500, bottom: '-10%', left: '-10%', background: 'radial-gradient(circle, rgba(232,84,122,0.08) 0%, transparent 70%)' }}/>
         <div style={{ maxWidth: 900, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ textAlign: 'center', marginBottom: 64 }}>
-            <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(232,84,122,0.7)', marginBottom: 20 }}>El problema</div>
-            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 300, lineHeight: 1.15, fontStyle: 'italic' }}>
+            <div className="reveal" style={{ fontSize: 18, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(232,84,122,0.7)', marginBottom: 20 }}>El problema</div>
+            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(4rem, 11vw, 9rem)', fontWeight: 300, lineHeight: 1.05, fontStyle: 'italic' }}>
               Las apps actuales<br/>
               <span style={{ color: 'rgba(240,236,234,0.35)', textDecoration: 'line-through' }}>no funcionan.</span>
             </h2>
