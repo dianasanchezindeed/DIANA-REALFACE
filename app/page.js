@@ -463,7 +463,7 @@ export default function Home() {
             <WaitlistForm large />
           </div>
           <p className="reveal delay-400" style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 20 }}>
-            Sin spam. Sin compromisos. Solo te avisamos cuando estés listo.
+            Sin spam. Solo te avisamos cuando esté listo.
           </p>
         </div>
       </section>
