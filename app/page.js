@@ -277,7 +277,7 @@ export default function Home() {
                   justifyContent: 'center', fontSize: 24, margin: '0 auto 20px', color: 'rgba(240,236,234,0.5)' }}>{item.icon}</div>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: 10, color: 'rgba(240,236,234,0.5)',
                   textDecoration: 'line-through', textDecorationColor: 'rgba(232,84,122,0.4)' }}>{item.title}</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
+                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>
