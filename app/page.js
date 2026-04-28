@@ -259,7 +259,7 @@ export default function Home() {
         <div style={{ maxWidth: 900, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ textAlign: 'center', marginBottom: 64 }}>
             <div className="reveal" style={{ fontSize: 18, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(232,84,122,0.7)', marginBottom: 20 }}>El problema</div>
-            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(4rem, 11vw, 9rem)', fontWeight: 300, lineHeight: 1.05, fontStyle: 'italic' }}>
+            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(3.2rem, 9vw, 7.5rem)', fontWeight: 300, lineHeight: 1.05, fontStyle: 'italic' }}>
               Las apps actuales<br/>
               <span style={{ color: 'rgba(240,236,234,0.35)', textDecoration: 'line-through' }}>no funcionan.</span>
             </h2>
