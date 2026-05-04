@@ -375,7 +375,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PLANES */}
+     {/* PLANES */}
       <section style={{ padding: 'clamp(80px,12vw,140px) 24px', position: 'relative', overflow: 'hidden' }}>
         <div className="orb" style={{ width: 500, height: 500, top: '5%', left: '-10%', background: 'radial-gradient(circle, rgba(76,201,240,0.1) 0%, transparent 70%)' }}/>
         <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 2 }}>
@@ -403,6 +403,79 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* POLAROIDS */}
+          <div style={{
+            marginTop: 80,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: 24,
+            padding: '0 12px',
+          }}>
+            {[
+              { src: '/polaroid-1.jpg', label: 'Plan improvisado', rotate: '-4deg', delay: '0s' },
+              { src: '/polaroid-2.jpg', label: 'Sevilla', rotate: '2.5deg', delay: '1.2s' },
+              { src: '/polaroid-3.jpg', label: null, rotate: '-2deg', delay: '0.6s' },
+              { src: '/polaroid-4.jpg', label: 'Rooftop night', rotate: '3.5deg', delay: '1.8s' },
+              { src: '/polaroid-5.jpg', label: 'Conocí gente increíble', rotate: '-1.5deg', delay: '0.9s' },
+              { src: '/polaroid-6.jpg', label: null, rotate: '2deg', delay: '2.1s' },
+              { src: '/polaroid-7.jpg', label: 'Sevilla', rotate: '-3deg', delay: '1.5s' },
+            ].map((p, i) => (
+              <div key={i} style={{
+                transform: `rotate(${p.rotate})`,
+                animation: `floatSlow ${6 + i * 0.7}s ease-in-out infinite`,
+                animationDelay: p.delay,
+                transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                cursor: 'default',
+              }}
+              onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.04)'}
+              onMouseLeave={e => e.currentTarget.style.transform = `rotate(${p.rotate}) scale(1)`}
+              >
+                <div style={{
+                  background: '#ffffff',
+                  padding: '10px 10px 32px 10px',
+                  borderRadius: 4,
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.2)',
+                  width: 180,
+                }}>
+                  <div style={{
+                    width: '100%',
+                    height: 220,
+                    overflow: 'hidden',
+                    borderRadius: 2,
+                    background: '#111',
+                  }}>
+                    <img
+                      src={p.src}
+                      alt=""
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        display: 'block',
+                        filter: 'brightness(0.92) contrast(1.05) saturate(0.9)',
+                      }}
+                    />
+                  </div>
+                  {p.label && (
+                    <div style={{
+                      marginTop: 10,
+                      textAlign: 'center',
+                      fontFamily: '"Segoe UI", cursive',
+                      fontSize: 11,
+                      color: '#444',
+                      letterSpacing: 0.3,
+                      fontStyle: 'italic',
+                    }}>
+                      {p.label}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
