@@ -195,19 +195,24 @@ export default function Home() {
             RealFace
           </div>
 
-         <h1 className="reveal delay-200 font-display" style={{
+        <h1 className="reveal delay-200 font-display" style={{
   fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)',
-  fontWeight: 300, lineHeight: 1.4,
+  fontWeight: 300, lineHeight: 1.3,
   color: '#ffffff',
-  marginBottom: 48, fontStyle: 'italic',
+  marginBottom: 16, fontStyle: 'italic',
 }}>
-  <span className="hero-line">La primera IA que entiende cómo eres,</span>
-
-<span className="hero-line">te presenta a tu futura pareja</span>
-
-<span className="hero-line">y te conecta con una comunidad de personas afines</span>
-
-<span className="hero-line">a través de eventos y actividades.</span>
+  La primera IA que entiende cómo eres, te presenta a{' '}
+  <span style={{
+    background: 'linear-gradient(135deg, #f8c8d4, #e8547a 40%, #9b5de5)',
+    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
+  }}>tu futura pareja</span>
+  {' '}y te conecta con una{' '}
+  <span style={{
+    background: 'linear-gradient(135deg, #a8edea, #4cc9f0 40%, #9b5de5)',
+    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
+  }}>comunidad de personas afines</span>
+  {' '}a través de eventos y actividades.
+</h1>
 </h1>
 
           <div className="reveal delay-400" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
