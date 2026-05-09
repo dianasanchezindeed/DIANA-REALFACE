@@ -300,6 +300,19 @@ export default function Home() {
             <p className="reveal delay-200" style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginTop: 16, fontStyle: 'italic', letterSpacing: 0.5 }}>
               This feels different.
             </p>
+                <div
+  className="reveal delay-300"
+  style={{
+    fontSize: 12,
+    letterSpacing: 3,
+    textTransform: 'uppercase',
+    color: 'rgba(76,201,240,0.7)',
+    marginTop: 40,
+    marginBottom: 20,
+  }}
+>
+  Primer caso de uso
+</div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1 }}>
             {[
