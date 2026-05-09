@@ -288,49 +288,89 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SOLUCIÓN */}
-      <section style={{ padding: 'clamp(80px,12vw,140px) 24px', position: 'relative', overflow: 'hidden' }}>
-        <div className="orb" style={{ width: 600, height: 600, top: '10%', right: '-15%', background: 'radial-gradient(circle, rgba(155,93,229,0.14) 0%, transparent 70%)' }}/>
-        <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 2 }}>
-          <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(76,201,240,0.7)', marginBottom: 20 }}>La solución</div>
-            <h2 className="reveal delay-100 font-display gradient-text-cool" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 300, lineHeight: 1.1, fontStyle: 'italic' }}>
-              RealFace es diferente.
-            </h2>
-            <p className="reveal delay-200" style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginTop: 16, fontStyle: 'italic', letterSpacing: 0.5 }}>
-              This feels different.
-            </p>
-                <div
-  className="reveal delay-300"
-  style={{
-    fontSize: 12,
-    letterSpacing: 3,
-    textTransform: 'uppercase',
-    color: 'rgba(76,201,240,0.7)',
-    marginTop: 40,
-    marginBottom: 20,
-  }}
->
-  Primer caso de uso
-</div>
+    {/* SOLUCIÓN */}
+<section style={{ padding: 'clamp(80px,12vw,140px) 24px', position: 'relative', overflow: 'hidden' }}>
+  <div className="orb" style={{ width: 600, height: 600, top: '10%', right: '-15%', background: 'radial-gradient(circle, rgba(155,93,229,0.14) 0%, transparent 70%)' }}/>
+
+  <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+    
+    <div style={{ textAlign: 'center', marginBottom: 72 }}>
+      <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(76,201,240,0.7)', marginBottom: 20 }}>
+        La solución
+      </div>
+
+      <h2 className="reveal delay-100 font-display gradient-text-cool" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 300, lineHeight: 1.1, fontStyle: 'italic' }}>
+        RealFace es diferente.
+      </h2>
+
+      <p className="reveal delay-200" style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginTop: 16, fontStyle: 'italic', letterSpacing: 0.5 }}>
+        This feels different.
+      </p>
+
+      <div
+        className="reveal delay-300"
+        style={{
+          fontSize: 12,
+          letterSpacing: 3,
+          textTransform: 'uppercase',
+          color: 'rgba(76,201,240,0.7)',
+          marginTop: 40,
+          marginBottom: 20,
+        }}
+      >
+        Primer caso de uso
+      </div>
+    </div>
+
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1 }}>
+      {[
+        {
+          icon: '✦',
+          label: 'No eliges por fotos',
+          sub: 'La IA entiende quién eres y qué buscas, y te conecta con personas que realmente encajan contigo. Luego tú decides.'
+        },
+        {
+          icon: '⏱',
+          label: 'No pierdes el tiempo',
+          sub: 'Ves directamente personas que encajan contigo. Cuanto más la uses, mejores matches te dará.'
+        },
+        {
+          icon: '✖',
+          label: 'Sistema anti-ghosting y sin fomo',
+          sub: 'Solo puedes hablar con 5 personas a la vez. Si quieres ver más, tienes que cerrar conversaciones de forma educada.'
+        },
+        {
+          icon: '◉',
+          label: 'La conexión no se queda en el chat',
+          sub: 'La IA te conecta con personas compatibles y si hay feeling, pasáis a la vida real.'
+        }
+      ].map((item, i) => (
+        <div
+          key={i}
+          className={`reveal delay-${i * 100 + 200}`}
+          style={{
+            padding: '36px 28px',
+            borderRight: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none',
+            borderBottom: '1px solid rgba(255,255,255,0.05)'
+          }}
+        >
+          <div className="gradient-text" style={{ fontSize: 28, marginBottom: 16 }}>
+            {item.icon}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1 }}>
-            {[
-              { icon: '◈', label: 'No eliges por fotos', sub: 'La IA entiende quién eres, no cómo te ves.' },
-              { icon: '⏱', label: 'No pierdes el tiempo', sub: 'Solo ves personas que ya tienen sentido para ti.' },
-              { icon: '◉', label: 'La IA te entiende', sub: 'Aprende tu personalidad, valores y forma de ser.' },
-              { icon: '✦', label: 'Compatibilidad real', sub: 'Conecta personas que realmente encajan.' },
-            ].map((item, i) => (
-              <div key={i} className={`reveal delay-${i * 100 + 200}`}
-                style={{ padding: '36px 28px', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                <div className="gradient-text" style={{ fontSize: 28, marginBottom: 16 }}>{item.icon}</div>
-                <h3 style={{ fontSize: '1.35rem', fontWeight: 500, marginBottom: 10 }}>{item.label}</h3>
-                <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.sub}</p>
-              </div>
-            ))}
-          </div>
+
+          <h3 style={{ fontSize: '1.35rem', fontWeight: 500, marginBottom: 10 }}>
+            {item.label}
+          </h3>
+
+          <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
+            {item.sub}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* 87% */}
       <section style={{ padding: 'clamp(80px,12vw,140px) 24px',
