@@ -272,7 +272,7 @@ export default function Home() {
             {[
               { icon: '∞', title: 'Swipe infinito', desc: 'Horas mirando fotos de personas que nunca conocerás.', color: 'rgba(232,84,122,0.2)' },
               { icon: '◌', title: 'Conversaciones vacías', desc: '"Hola" → silencio. Una y otra vez. Sin fin.', color: 'rgba(155,93,229,0.2)' },
-              { icon: '⊘', title: 'Conexiones sin futuro', desc: 'Matches que no llevan a ningún sitio real.', color: 'rgba(76,201,240,0.15)' },
+              { icon: '⊘', title: 'Falta de contexto social', desc: 'Conoces a alguien sin ver quién es realmente en su vida real.', color: 'rgba(76,201,240,0.15)' },
             ].map((item, i) => (
               <div key={i} className={`reveal delay-${i * 150 + 100} glass`}
                 style={{ padding: '32px 28px', borderRadius: 20, border: '1px solid rgba(255,255,255,0.06)', textAlign: 'center' }}>
