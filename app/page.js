@@ -204,37 +204,12 @@ export default function Home() {
   fontStyle: 'italic',
 }}>
   
-  <span className="hero-line">
-    La primera IA que entiende cómo eres
-  </span>
-
-  <span className="hero-line">
-    te presenta a{' '}
-    <span style={{
-      background: 'linear-gradient(135deg, #f8c8d4, #e8547a 40%, #9b5de5)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text'
-    }}>
-      tu futura pareja
-    </span>
-  </span>
-
-  <span className="hero-line">
-    y te conecta con una{' '}
-    <span style={{
-      background: 'linear-gradient(135deg, #a8edea, #4cc9f0 40%, #9b5de5)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text'
-    }}>
-      comunidad de personas afines
-    </span>
-  </span>
-
-  <span className="hero-line">
-    a través de eventos y actividades.
-  </span>
+    
+  <span className="hero-line">La primera IA que entiende cómo</span>
+  <span className="hero-line">eres, te presenta a tu futura pareja</span>
+  <span className="hero-line">y te conecta con una</span>
+  <span className="hero-line">comunidad de personas afines</span>
+  <span className="hero-line">a través de eventos y actividades</span>
 
 </h1>
 
