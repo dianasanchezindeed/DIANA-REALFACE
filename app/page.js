@@ -288,14 +288,32 @@ export default function Home() {
         </div>
       </section>
 
-    {/* SOLUCIÓN */}
+  {/* SOLUCIÓN */}
 <section style={{ padding: 'clamp(80px,12vw,140px) 24px', position: 'relative', overflow: 'hidden' }}>
-  <div className="orb" style={{ width: 600, height: 600, top: '10%', right: '-15%', background: 'radial-gradient(circle, rgba(155,93,229,0.14) 0%, transparent 70%)' }}/>
+  <div
+    className="orb"
+    style={{
+      width: 600,
+      height: 600,
+      top: '10%',
+      right: '-15%',
+      background: 'radial-gradient(circle, rgba(232,84,122,0.14) 0%, transparent 70%)'
+    }}
+  />
 
   <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 2 }}>
     
-    <div style={{ textAlign: 'center', marginBottom: 72 }}>
-      <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(76,201,240,0.7)', marginBottom: 20 }}>
+    <div style={{ textAlign: 'center', marginBottom: 90 }}>
+      <div
+        className="reveal"
+        style={{
+          fontSize: 12,
+          letterSpacing: 3,
+          textTransform: 'uppercase',
+          color: 'rgba(232,84,122,0.75)',
+          marginBottom: 20
+        }}
+      >
         La solución
       </div>
 
@@ -313,8 +331,8 @@ export default function Home() {
           fontSize: 12,
           letterSpacing: 3,
           textTransform: 'uppercase',
-          color: 'rgba(76,201,240,0.7)',
-          marginTop: 40,
+          color: 'rgba(232,84,122,0.75)',
+          marginTop: 80,
           marginBottom: 20,
         }}
       >
@@ -324,7 +342,6 @@ export default function Home() {
 
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1 }}>
       {[
-        {
           icon: '✦',
           label: 'No eliges por fotos',
           sub: 'La IA entiende quién eres y qué buscas, y te conecta con personas que realmente encajan contigo. Luego tú decides.'
