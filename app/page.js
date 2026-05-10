@@ -553,30 +553,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CÓMO FUNCIONA */}
-      <section style={{ padding: 'clamp(80px,12vw,140px) 24px', background: 'rgba(255,255,255,0.01)', borderTop: '1px solid rgba(255,255,255,0.04)', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ maxWidth: 900, margin: '0 auto', position: 'relative', zIndex: 2 }}>
-          <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(232,84,122,0.7)', marginBottom: 20 }}>Cómo funciona</div>
-            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, fontStyle: 'italic' }}>Simple. Casi mágico.</h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 0 }}>
-            {[
-              { num: 1, title: 'Creas tu perfil', desc: 'Sin cuestionarios eternos. Simple, rápido, tuyo.' },
-              { num: 2, title: 'La IA te conoce', desc: 'Aprende quién eres con cada interacción.' },
-              { num: 3, title: 'Te muestra lo que encaja', desc: 'Personas o planes. Siempre relevantes.' },
-              { num: 4, title: 'Tú decides', desc: 'El control siempre es tuyo.' },
-            ].map((step, i) => (
-              <div key={i} className={`reveal delay-${i * 150}`}
-                style={{ padding: '32px 28px', textAlign: 'center', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none' }}>
-                <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'linear-gradient(135deg, rgba(232,84,122,0.2), rgba(155,93,229,0.2))', border: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: 18, fontFamily: 'var(--font-display)', fontWeight: 300, color: 'rgba(248,200,212,0.8)' }}>{step.num}</div>
-                <h3 style={{ fontSize: '0.95rem', fontWeight: 500, marginBottom: 8 }}>{step.title}</h3>
-                <p style={{ fontSize: '0.83rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* VALUE PROPS */}
       <section style={{ padding: 'clamp(60px,10vw,100px) 24px', position: 'relative', overflow: 'hidden' }}>
