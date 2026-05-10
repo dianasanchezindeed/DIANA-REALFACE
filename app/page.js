@@ -195,49 +195,40 @@ export default function Home() {
             RealFace
           </div>
 
-<h1 className="reveal delay-200 font-display" style={{
+        <h1 className="reveal delay-200 font-display" style={{
   fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)',
-  fontWeight: 300,
-  lineHeight: 1.4,
+  fontWeight: 300, lineHeight: 1.4,
   color: '#ffffff',
-  marginBottom: 48,
-  fontStyle: 'italic',
+  marginBottom: 48, fontStyle: 'italic',
 }}>
-  
-    
-  <span className="hero-line">La primera IA que entiende cómo</span>
-  <span className="hero-line">eres, te presenta a tu futura pareja</span>
-  <span className="hero-line">y te conecta con una</span>
-  <span className="hero-line">comunidad de personas afines</span>
-  <span className="hero-line">a través de eventos y actividades</span>
-
+  <span className="hero-line">La primera IA que entiende cómo eres,{' '}</span>
+  <span className="hero-line">te presenta a{' '}
+  <span style={{
+    background: 'linear-gradient(135deg, #f8c8d4, #e8547a 40%, #9b5de5)',
+    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
+  }}>tu futura pareja</span>
+  {' '}</span>
+  <span className="hero-line">y te conecta con una{' '}
+  <span style={{
+    background: 'linear-gradient(135deg, #a8edea, #4cc9f0 40%, #9b5de5)',
+    WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
+  }}>comunidad de personas afines</span>
+  {' '}</span>
+  <span className="hero-line">a través de eventos y actividades.</span>
 </h1>
 
-<div className="reveal delay-400" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-  <button
-    onClick={scrollToWaitlist}
-    style={{
-      padding: '16px 48px',
-      borderRadius: 50,
-      fontSize: '1rem',
-      fontFamily: 'var(--font-body)',
-      fontWeight: 600,
-      cursor: 'pointer',
-      border: 'none',
-      background: 'linear-gradient(135deg, #ffffff, #f0d4db)',
-      color: '#1a0a10',
-      letterSpacing: 0.5,
-      transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-    }}
-    onMouseEnter={e => {
-      e.currentTarget.style.transform = 'translateY(-2px)';
-      e.currentTarget.style.boxShadow = '0 16px 50px rgba(255,255,255,0.2)';
-    }}
-    onMouseLeave={e => {
-      e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = 'none';
-    }}
-  >
+          <div className="reveal delay-400" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+            <button onClick={scrollToWaitlist} style={{
+              padding: '16px 48px', borderRadius: 50,
+              fontSize: '1rem', fontFamily: 'var(--font-body)', fontWeight: 600,
+              cursor: 'pointer', border: 'none',
+              background: 'linear-gradient(135deg, #ffffff, #f0d4db)',
+              color: '#1a0a10', letterSpacing: 0.5,
+              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 16px 50px rgba(255,255,255,0.2)' }}
+            onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
+            >
               Únete a la lista de espera
             </button>
             <span style={{ fontSize: 16, color: 'var(--text-muted)' }}>
