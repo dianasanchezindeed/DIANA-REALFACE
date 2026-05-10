@@ -439,10 +439,10 @@ export default function Home() {
           <div style={{ textAlign: 'center', marginBottom: 72 }}>
             <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(76,201,240,0.7)', marginBottom: 20 }}>Segundo caso de uso</div>
             <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, fontStyle: 'italic' }}>
-              ¿Ya tienes pareja?<br/><span style={{ color: 'var(--text-muted)' }}>También es para ti.</span>
+              Eventos, actividades y comunidades<br/><span style={{ color: 'var(--text-muted)' }}> Conecta con personas afines.</span>
             </h2>
             <p className="reveal delay-200" style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: 500, margin: '20px auto 0', lineHeight: 1.7 }}>
-              Crea planes. Únete a los de otros.<br/>Conoce gente que piensa como tú.
+              Crea tus propios planes o Únete a comunidades y eventos ya organizados.<br/>Conoce gente que piensa como tú y comparte tus intereses
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
@@ -471,13 +471,13 @@ export default function Home() {
             padding: '0 12px',
           }}>
             {[
-              { src: '/polaroid-1.jpg', label: 'Plan improvisado', rotate: '-4deg', delay: '0s' },
-              { src: '/polaroid-2.jpg', label: 'Sevilla', rotate: '2.5deg', delay: '1.2s' },
-              { src: '/polaroid-3.jpg', label: null, rotate: '-2deg', delay: '0.6s' },
-              { src: '/polaroid-4.jpg', label: 'Rooftop night', rotate: '3.5deg', delay: '1.8s' },
-              { src: '/polaroid-5.jpg', label: 'Conocí gente increíble', rotate: '-1.5deg', delay: '0.9s' },
-              { src: '/polaroid-6.jpg', label: null, rotate: '2deg', delay: '2.1s' },
-              { src: '/polaroid-7.jpg', label: 'Sevilla', rotate: '-3deg', delay: '1.5s' },
+              { src: '/polaroid-1.jpg', label: 'Sevilla, 2:14 AM', rotate: '-4deg', delay: '0s' },
+              { src: '/polaroid-2.jpg', label: 'En la ofi', rotate: '2.5deg', delay: '1.2s' },
+              { src: '/polaroid-3.jpg', label: 'Debi tirar más fotos' , rotate: '-2deg', delay: '0.6s' },
+              { src: '/polaroid-4.jpg', label: 'En el episodio anterior..', rotate: '3.5deg', delay: '1.8s' },
+              { src: '/polaroid-5.jpg', label: 'Sunday vibes', rotate: '-1.5deg', delay: '0.9s' },
+              { src: '/polaroid-6.jpg', label: 'Barcelona blues', rotate: '2deg', delay: '2.1s' },
+              { src: '/polaroid-7.jpg', label: 'Alexa, skip to summer', rotate: '-3deg', delay: '1.5s' },
             ].map((p, i) => (
               <div key={i} style={{
                 transform: `rotate(${p.rotate})`,
