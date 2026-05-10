@@ -331,9 +331,9 @@ export default function Home() {
           fontSize: 12,
           letterSpacing: 3,
           textTransform: 'uppercase',
-          color: 'rgba(232,84,122,0.75)',
-          marginTop: 80,
-          marginBottom: 20,
+          color: 'rgba(76,201,240,0.85)',
+          marginTop: 40,
+          marginBottom: 50,
         }}
       >
         Primer caso de uso
