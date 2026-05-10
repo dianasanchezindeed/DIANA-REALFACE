@@ -397,8 +397,8 @@ export default function Home() {
         <div className="orb" style={{ width: 700, height: 700, top: '50%', left: '50%', transform: 'translate(-50%,-50%)', background: 'radial-gradient(circle, rgba(155,93,229,0.1) 0%, transparent 60%)' }}/>
         <div style={{ maxWidth: 1100, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ textAlign: 'center', marginBottom: 80 }}>
-            <div className="reveal" style={{ fontSize: 12, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(155,93,229,0.7)', marginBottom: 20 }}>La magia</div>
-            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', fontWeight: 300, lineHeight: 1.15, fontStyle: 'italic' }}>
+            <div className="reveal" style={{ fontSize: 14, letterSpacing: 3, textTransform: 'uppercase', color: 'rgba(180,130,255,0.85)', marginBottom: 20 }}>La magia</div>
+            <h2 className="reveal delay-100 font-display" style={{ fontSize: 'clamp(2.3rem, 6.5vw, 4.6rem)', fontWeight: 300, lineHeight: 1.15, fontStyle: 'italic' }}>
               Te conoce antes<br/><span className="gradient-text">de conectarte.</span>
             </h2>
           </div>
