@@ -342,7 +342,8 @@ export default function Home() {
 
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 1 }}>
       {[
-          icon: '✦',
+  {
+    icon: '✦',
           label: 'No eliges por fotos',
           sub: 'La IA entiende quién eres y qué buscas, y te conecta con personas que realmente encajan contigo. Luego tú decides.'
         },
