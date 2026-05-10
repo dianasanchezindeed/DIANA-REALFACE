@@ -333,7 +333,7 @@ export default function Home() {
           textTransform: 'uppercase',
           color: 'rgba(76,201,240,0.85)',
           marginTop: 80,
-          marginBottom: 40,
+          marginBottom: 10,
         }}
       >
         Primer caso de uso
